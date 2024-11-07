@@ -1,0 +1,49 @@
+{
+	"format_version": 2,
+	"header": {
+			"name": "§gStar§7Craft §cDevelopment §a|| §8Supported Version§7: §6(§31.21.30§6)",
+			"description": "§fApply in realm StarCraft §8[§6Bp§8] §aVersion§7: §b1.0",
+			"uuid": "33333333-cccc-cccc-cccc-333333333333",
+			"version": [1, 0, 0],
+			"min_engine_version": [1, 21, 30]
+	},
+	"modules": [
+			{
+					"description": "item and entity definitions",
+					"type": "data",
+					"uuid": "44444444-dddd-dddd-dddd-444444444444",
+					"version": [1, 0, 0]
+			},
+			{
+					"description": "scripts",
+					"type": "script",
+					"language": "javascript",
+					"uuid": "55555555-eeee-eeee-eeee-555555555555",
+					"version": [1, 0, 0],
+					"entry": "scripts/index.js"
+			}
+	],
+	"capabilities": ["script_eval"],
+	"dependencies": [
+			{
+					"module_name": "@minecraft/server",
+					"version": "1.15.0-beta"
+			},
+			{
+					"module_name": "@minecraft/server-ui",
+					"version": "1.4.0-beta"
+			},
+			{
+					"module_name": "@minecraft/server-admin",
+					"version": "1.0.0-beta"
+			},
+			{
+					"uuid": "11111111-aaaa-aaaa-aaaa-111111111111",
+					"version": [1, 0, 0] 
+			}
+	],
+	"metadata": {
+			"authors": ["Duskara"],
+			"license": "GPL-3.0-or-later"
+	}
+}

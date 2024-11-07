@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@minecraft/server": "^1.15.0-beta.1.21.30-stable",
+    "@minecraft/server-ui": "^1.4.0-beta.1.21.40-preview.23"
+  }
+}
