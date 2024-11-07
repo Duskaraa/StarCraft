@@ -1,3 +1,5 @@
+//Imports
+
 
 import { system, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
@@ -29,12 +31,9 @@ import "./src/libraries/classes/PvPSystem";
 
 import { AreaLobby, AreaShop, AreaSurvivalLobby, ZoneMinePVE, ZoneMinePVP } from "./src/modules/ProtectedHandlerAreas/List";
 
-
-// Event Handlers
 system.beforeEvents.watchdogTerminate.subscribe((event) => {
     event.cancel = true;
     world.sendMessage(
         `§8[§7SistemaCritico§8]  §cAVISO. §4CRITICO §6"${event.terminateReason}" §bExecucion de miles de procesos, ejecutando cancelacion de procesos!!!`
     );
 });
-
